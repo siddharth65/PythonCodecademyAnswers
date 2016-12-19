@@ -1,7 +1,7 @@
 def anti_vowel(text):
-    vowels = 'aeiou'
+    vowels = 'aeiouAEIOU'
     new_text = ''
     for i in text:
-        if i.lower() not in vowels:
+        if i not in vowels:      
             new_text += i
     return new_text
